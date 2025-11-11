@@ -82,19 +82,20 @@ int main(void) {
         
     }
     
-    void clean_buffer(void) {
-        int c; while ((c = getchar()) != '\n' && c != EOF) {};        
-    }
-
-    void show_menu(void) {
-        printf("----------------------\n");
-        printf("         MENU         \n");
-        printf("----------------------\n");
-        printf("0 - Sair\n");
-        printf("1 - Explorar sala\n");
-        printf("----------------------\n");
-    }
 
 
     return 0;
+}
+
+void clean_buffer(void) {
+    int c; while ((c = getchar()) != '\n' && c != EOF) {};        
+}
+
+void show_menu(void) {
+    printf("----------------------\n");
+    printf("         MENU         \n");
+    printf("----------------------\n");
+    printf("0 - Sair\n");
+    printf("1 - Explorar sala\n");
+    printf("----------------------\n");
 }
